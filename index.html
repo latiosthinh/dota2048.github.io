@@ -6,74 +6,167 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Dota2048.github.io : Game 2048 version Dota2" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link href="style/main.css" rel="stylesheet" type="text/css">
+    <link href="style/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  
+    <meta property="og:title" content="2048 game"/>
+    <meta property="og:site_name" content="2048 game"/>
+    <meta property="og:description" content="Join the items and get to the Divine Rapier! Careful: this game is extremely addictive!"/>
 
-    <title>Dota2048.github.io</title>
+    <title>Dota2048</title>
+    
   </head>
 
   <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/latiosthinh/dota2048.github.io">View on GitHub</a>
-
-          <h1 id="project_title">Dota2048.github.io</h1>
-          <h2 id="project_tagline">Game 2048 version Dota2</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/latiosthinh/dota2048.github.io/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/latiosthinh/dota2048.github.io/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">Dota2-048</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+    <div class="above-game">
+      <p class="game-intro">Join the items and get to <strong><s>&nbsp2048&nbsp</s> Divine Rapier!</strong></p>
+      <a class="restart-button">New Game</a>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Dota2048.github.io maintained by <a href="https://github.com/latiosthinh">latiosthinh</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+    <div class="game-container">
+      <div class="game-message">
+        <div class="lower">
+        <p></p>
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+          <div class="score-sharing"></div>
+        </div>
+      
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
     </div>
 
+    <p class="game-explanation" align="center">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same item touch, they <strong>merge into one!</strong>
+    </p>
     
+    <hr>
+    <p align="center">
+      <strong class="important">Note:</strong> This site is a Dota2 themed version of <a href='http://git.io/2048'>2048</a> &lt;which is modified from LOL version&gt;.
+    </p>
+    <hr>
+    
+    <div class='key'>
+    <table class="table">
+      <thead>
+        <td>
+          Value
+        </td>
+        <td>
+          Item
+        </td>
+      </thead>
+      <tbody>
+      <tr>
+        <td>2</td>
+        <td><img src='image/img/blink.jpg'></td>
+        <td>64</td>
+        <td><img src='image/img/ethereal.jpg'></td>
+        
+      </tr>
+      <tr>
+        <td>4</td>
+        <td><img src='image/img/deffusal.jpg'></td>
+        <td>128</td>
+        <td><img src='image/img/heaven.jpg'></td>
+        
+      </tr>
+      <tr>
+        <td>8</td>
+        <td><img src='image/img/deso.jpg'></td>
+        <td>256</td>
+        <td><img src='image/img/butterfly.jpg'></td>
+        
+      </tr>
+      <tr>
+        <td>16</td>
+        <td><img src='image/img/crit.jpg'></td>
+        <td>512</td>
+        <td><img src='image/img/demonedge.jpg'></td>
+        
+      </tr>
 
-  </body>
+      <tr>
+      	<td>32</td>
+        <td><img src='image/img/manta.jpg'></td>
+        <td>1024</td>
+        <td><img src='image/img/abbysal.jpg'></td>
+      </tr>
+      <tr>
+      	<td></td>
+        <td></td>
+        <td>2048</td>
+        <td><img src='image/img/rapier.jpg'></td>
+      </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+</script>
+
+</body>
 </html>
